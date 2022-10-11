@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* App bar */
+
+.navbar a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background: #FFE3DF !important;
+  color: #000;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Banner section */
+.Banner__section {
+  background: #FFE3DF;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Quiz section */
+
+.Quiz__section .quiz-card img {
+  max-width: 180px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.Quiz__section .quiz-card {
+  background-color: #180A0A;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.Quiz__section .quiz-card .badge {
+  left: 5px;
+  position: absolute;
+  top: 5px;
+}
+
+.question-card {
+  position: relative;
+}
+
+.question-card p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.question-card label {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.question-card label:hover {
+  font-weight: 600;
+  color: #ff634a;
+}
+
+.question-card .show-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff6f59;
+}
+
+/* Blog page */
+.blog-card {
+  position: relative;
+}
+
+.blog-card .count {
+  background: #FFE3DF;
+  width: 40px;
+  height: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  left: -15px;
+  top: -15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Blog: single page */
+
+.blog-details h1 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blog-details p {
+  font-size: 18px;
+  word-spacing: 2px;
+  font-weight: 400;
+}
+
+.blog-details h1.title {
+  color: #ff6f59;
+  font-weight: 700;
+  font-size: 30px;
 }
