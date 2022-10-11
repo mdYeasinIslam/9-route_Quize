@@ -10,14 +10,7 @@ import Statistics from './pages/Statistics';
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/statistics" element={<Statistics />} />
-        <Route path="/quiz/:id" element={<QuizPage />} />
-        <Route path="/blog" element={<Blogs />} />
-        <Route path="/blog/:id" element={<Blog />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <h1>Quizo</h1>
     </div>
   );
 }
